@@ -1,0 +1,1 @@
+export const FONT_LOCAL_STORAGE = 'font';
