@@ -4,6 +4,7 @@ import { Header } from "./components/Header";
 import { useFonts } from "./providers/fonts/FontsProvider";
 import { Banner } from "./components/Banner";
 import { memo } from "react";
+import { PosterPage } from "./pages/PosterPage/PosterPage";
 
 const App = memo(() => {
   const { font } = useFonts();
@@ -14,6 +15,7 @@ const App = memo(() => {
       <Banner />
       <Routes>
         <Route path="/" element={<SearchPage />} />
+        <Route path="/poster" element={<PosterPage />} />
       </Routes>
     </div>
   );

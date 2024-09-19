@@ -15,12 +15,19 @@ export const Header = () => {
   };
 
   return (
-    <div className="flex mb-3 items-center justify-center mt-1 flex-row">
+    <div className="flex mb-3 items-center gap-1 justify-center mt-1 flex-row">
       <NavLink
         className={({ isActive }) =>
           `${isActive ? 'text-red-600' : 'text-blue-500'}`
         } to='/'>
         Поиск
+      </NavLink>
+      
+      <NavLink
+        className={({ isActive }) =>
+          `${isActive ? 'text-red-600' : 'text-blue-500'}`
+        } to='/poster'>
+        Poster
       </NavLink>
 
       <Button type="default" onClick={handleFontToggle} className="ml-2">Change Font</Button>
